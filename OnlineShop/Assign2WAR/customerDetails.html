@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>-FORM TEMPLATE -</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/form.css" />
+<script language="javascript" type="text/javascript">
+function validate(form)
+{
+	if(form.gname.value == "" || form.gname.value == null)
+	{
+		alert("gname can not be empty");
+		form.gname.focus();
+		return false;
+	}
+	
+	if(form.sname.value == "" || form.sname.value == null)
+	{
+		alert("sname can not be empty");
+		form.gname.focus();
+		return false;
+	}
+	
+	if(validate_email(form.email.value) == false)
+	{
+	 	alert("Email format is wrong");
+	 	form.email.focus();
+	 	return false;
+	}
+	
+	if(form.address.value == "" || form.address.value == null)
+	{
+		alert("address can not be empty");
+		form.address.focus();
+		return false;
+	}
+	
+	if(form.postcode.value == "" || form.postcode.value == null)
+	{
+		alert("postcode can not be empty");
+		form.postcode.focus();
+		return false;
+	}
+	
+	if(form.country.value == "" || form.country.value == null)
+	{
+		alert("country can not be empty");
+		form.postcode.focus();
+		return false;
+	}
+	
+	if(form.payment.value == "" || form.payment.value == null)
+	{
+		alert("card number can not be empty");
+		form.payment.focus();
+		return false;
+	}
+	else
+	{
+		if(isNaN(form.payment.value))
+		{
+			alert("card number are only integer numbers");
+			form.payment.focus();
+			return false;
+		}
+	}
+}
+
+function validate_email(email)
+{
+	  var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+	  if(!reg.test(email))
+      return false
+      else
+      return true;
+}
+</script>
+</head>
+<body>
+<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="FacadeServlet?action=confirm-customer" onsubmit="return validate(this)">
+<h1>Order Form</h1>
+<label>GivenName</label> <input type="text" name="gname" id="gname" />
+<label>Surname </label> <input type="text" name="sname" id="sname" /> 
+<label>Email</label><input type="text" name="email" id="email" /> 
+<label>Address</label> <input type="text" name="address" id="address" /> 
+<label>PostCode</label> <input type="text" name="postcode" id="postcode" /> 
+<label>Country</label> <input type="text" name="country" id="country" /> 
+<label>Payment</label> <input type="text" name="payment" id="payment" /> 
+<input class="sub" type="submit" value="submit" />
+<div class="spacer"></div>
+</form>
+</div>
+</body>
+</html>

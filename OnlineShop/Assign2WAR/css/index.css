@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font: normal 11px auto "trebuchet ms", verdana, arial, helvetica,
+		sans-serif;
+}
+
+#top {
+	height: 8px;
+	background: #65a9e6;
+}
+
+#container {
+	width: 760px;
+	margin: 0 auto;
+}
+
+#logo {
+	height: 62px;
+	margin-top: 9px;
+	background: url(../images/logo.jpg) no-repeat 0 0;
+}
+
+#view {
+	width: 760px;
+	margin-top: 18px;
+	border: 2px solid lightpink;
+}
+
+p {
+	padding-left: 20px;
+	padding-bottom: 9px;
+	font-size: 12px;
+}
+
+#view h2 {
+	width: 720px;
+	height: 25px;
+	padding-left: 20px;
+	margin: 0;
+	line-height: 42px;
+	font-size: 15px;
+	color: #f60;
+	margin: 0;
+}
+
+.user {
+	height: 270px;
+	width: 200px;
+	margin: 9px 9px 9px 0;
+	border: 2px solid lightpink;
+	float: left;
+}
+
+img {
+	margin: 10px 0 0 23px;
+	border: 0;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #c75f3e;
+	text-decoration: underline;
+}
+
+a {
+	font-size: 14px;
+}
+
+#user {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#doc {
+	height: 270px;
+	width: 330px;
+	margin-top: 9px; border : 2px solid lightpink;
+	float: right;
+	border: 2px solid lightpink;
+}

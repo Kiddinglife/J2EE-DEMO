@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+	http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+<persistence-unit  name="aip" transaction-type="JTA">
+<jta-data-source>agent</jta-data-source>
+	<class>uts.edu.bean.Customer</class>
+	<class>uts.edu.bean.OrderDetail</class>
+	<class>uts.edu.bean.Order</class>
+	<class>uts.edu.bean.Products</class>
+</persistence-unit>
+</persistence>

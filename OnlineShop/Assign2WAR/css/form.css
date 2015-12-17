@@ -1,0 +1,100 @@
+body {
+	font: normal 15px auto "trebuchet ms", verdana, arial, helvetica,
+		sans-serif;
+}
+
+p,h1,form,button {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+form{
+	width: auto;
+	}
+
+.spacer {
+	clear: both;
+	height: 1px;
+}
+
+/* 〞〞〞每 My Form 〞〞〞每 */
+.myform {
+	width: 450px;
+	padding: 14px;
+	margin: 100px auto;
+}
+
+/* 〞〞〞每 stylized 〞〞〞每 */
+#stylized {
+	border: solid 2px #b7ddf2;
+	background: #ebf4fb;
+}
+
+#stylized h1 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: blue;
+	text-align: center;
+}
+
+#stylized p {
+	font-size: 9px;
+	color: #666666;
+	text-align: center;
+}
+
+#stylized label {
+	display: block;
+	width: 100px;
+	float: left;
+	line-height: 200%;
+	padding-left: 50px;
+}
+
+#stylized .small {
+	color: #666666;
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+	width: 140px;
+}
+
+#stylized input {
+	display: block;
+	float: left;
+	font-size: 15px;
+	padding: 4px 2px;
+	border: solid 1px #aacfe4;
+	width: 200px;
+	margin: 2px 0 20px 10px;
+}
+
+#stylized input:hover {
+	background: #e6eae9;
+}
+
+#stylized .sub {
+	clear: both;
+	margin-left: 150px;
+	width: 120px;
+	height: 32px;
+	line-height: 20px;
+	border: 1px solid #8b9c56;
+	background: url("../images/bt_bg.gif") 0px -64px;
+	text-align: center;
+	color: #336600;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.blue {
+	color: #0000FF;
+}
